@@ -6,13 +6,12 @@ import random
 class RANBuffer:
     def __init__(self, capacity=10000, num_agents=3, obs_shape=(14, 12)):
         self.buffer = deque(maxlen=capacity)
-        self.num_agents = num_agents
+        self.num_agents, self.obs_shape = num_agents, obs_shape
 
     def add_transition(self, obs, actions, rewards, next_obs, terminations, truncations):
         dones = {a: terminations[a] or truncations[a] for a in obs.keys()}
         self.buffer.append({
-            'obs': obs, 'actions': actions, 'rewards': rewards, 
-            'next_obs': next_obs, 'dones': dones,
+            'obs': obs, 'actions': actions, 'rewards': rewards, 'next_obs': next_obs, 'dones': dones,
             'state': self._construct_global_state(obs, rewards),
             'next_state': self._construct_global_state(next_obs, rewards)
         })
@@ -33,8 +32,7 @@ class RANBuffer:
             batch['actions'].append(torch.tensor([s['actions'][i] for i in ids]))
             batch['rewards'].append(torch.tensor([s['rewards'][i] for i in ids], dtype=torch.float32))
             batch['dones'].append(torch.tensor([float(s['dones'][i]) for i in ids]))
-            batch['state'].append(s['state'])
-            batch['next_state'].append(s['next_state'])
+            batch['state'].append(s['state']); batch['next_state'].append(s['next_state'])
         return {k: torch.stack(v) for k, v in batch.items()}
 
 class CTDEDataLoader:
