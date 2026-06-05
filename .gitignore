@@ -1,0 +1,16 @@
+# Python bytecode and caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Deep Learning / IDE files
+.vscode/
+.idea/
+.venv/
+venv/
+
+# Project Specific Data and Logs (Ignore binary data and histories)
+*.bin
+logs/*.csv
+plots/*.pdf
+plots/*.svg
