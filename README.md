@@ -58,3 +58,5 @@ By actively learning dynamic traffic variations from the OAI KPM telemetry log, 
    ```bash
    git clone [https://github.com/YOUR_USERNAME/6g-marl-ran.git](https://github.com/YOUR_USERNAME/6g-marl-ran.git)
    cd 6g-marl-ran
+### DATASET
+Data set is picked from this website as a baseline to compare with our work> https://zenodo.org/records/17935683
