@@ -76,3 +76,17 @@ To make your profile look visually stunning right away, save your two generated 
 
 ### DATASET
 Data set is picked from this website as a baseline to compare with our work> https://zenodo.org/records/17935683
+
+## 📑 Citation
+
+If you utilize this framework or the OAI KPM data pipeline configuration in your research, please cite this repository:
+
+```bibtex
+@misc{6gmarlran2026,
+  author = {Your Name},
+  title = {6G Multi-Agent Reinforcement Learning for Intelligent RAN Resource Allocation},
+  year = {2026},
+  publisher = {GitHub},
+  journal = {GitHub Repository},
+  howpublished = {\url{[https://github.com/YOUR_USERNAME/6g-marl-ran](https://github.com/YOUR_USERNAME/6g-marl-ran)}}
+}
