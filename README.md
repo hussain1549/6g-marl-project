@@ -58,5 +58,17 @@ By actively learning dynamic traffic variations from the OAI KPM telemetry log, 
    ```bash
    git clone [https://github.com/YOUR_USERNAME/6g-marl-ran.git](https://github.com/YOUR_USERNAME/6g-marl-ran.git)
    cd 6g-marl-ran
+
+Acknowledggments
+Ground data provided via an open-source, bare-metal OpenAirInterface (OAI) 5G RAN setup using an O-RAN compliant KPM xApp logging structure.
+
+---
+
+### 💡 Recommendation for Your Repository Layout:
+To make your profile look visually stunning right away, save your two generated evaluation figures (`interference_mitigation.pdf` and `throughput_comparison.pdf`) as `.png` files, place them inside a folder named `docs/` or `assets/`, and insert them directly into the **Experimental Results** section of the Markdown text using:
+```markdown
+![Throughput Comparison](docs/throughput_comparison.png)
+![Interference Mitigation](docs/interference_mitigation.png)
+
 ### DATASET
 Data set is picked from this website as a baseline to compare with our work> https://zenodo.org/records/17935683
