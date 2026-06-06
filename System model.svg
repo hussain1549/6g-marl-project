@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 800" width="100%" height="100%">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#4A5568" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#3182CE" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#805AD5" />
+    </marker>
+    
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF8FF" />
+      <stop offset="100%" stop-color="#BEE3F8" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFAF0" />
+      <stop offset="100%" stop-color="#FEEBC8" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5FF" />
+      <stop offset="100%" stop-color="#E9D8FD" />
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="800" fill="#F7FAFC" rx="10" />
+
+  <text x="450" y="35" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1A202C">6G MARL-RAN System Model Architecture</text>
+
+  <g transform="translate(30, 60)">
+    <rect width="840" height="170" fill="url(#blueGrad)" stroke="#63B3ED" stroke-width="2" rx="8" />
+    <text x="20" y="25" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#2B6CB0">1. PHYSICAL RAN INFRASTRUCTURE LAYER</text>
+    
+    <rect x="60" y="45" width="180" height="70" fill="#FFFFFF" stroke="#3182CE" stroke-width="2" rx="6" />
+    <text x="150" y="75" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#2D3748">gNodeB Cell 0</text>
+    <text x="150" y="95" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#718096">(Local Actor Policy 0)</text>
+
+    <rect x="330" y="45" width="180" height="70" fill="#FFFFFF" stroke="#3182CE" stroke-width="2" rx="6" />
+    <text x="420" y="75" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#2D3748">gNodeB Cell 1</text>
+    <text x="420" y="95" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#718096">(Local Actor Policy 1)</text>
+
+    <rect x="600" y="45" width="180" height="70" fill="#FFFFFF" stroke="#3182CE" stroke-width="2" rx="6" />
+    <text x="690" y="75" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#2D3748">gNodeB Cell 2</text>
+    <text x="690" y="95" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#718096">(Local Actor Policy 2)</text>
+
+    <rect x="60" y="135" width="720" height="22" fill="#FED7D7" stroke="#E53E3E" stroke-dasharray="4" rx="4" />
+    <text x="420" y="151" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#9B2C2C">DYNAMIC INTER-CELL INTERFERENCE &amp; FREQUENCY PRB CONFLICT ZONE</text>
+
+    <path d="M 150 115 L 150 135" stroke="#E53E3E" stroke-width="1.5" marker-end="url(#arrow)" />
+    <path d="M 420 115 L 420 135" stroke="#E53E3E" stroke-width="1.5" marker-end="url(#arrow)" />
+    <path d="M 690 115 L 690 135" stroke="#E53E3E" stroke-width="1.5" marker-end="url(#arrow)" />
+  </g>
+
+  <path d="M 450 230 L 450 260" stroke="#4A5568" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrow)" />
+  <text x="460" y="250" font-family="Segoe UI, sans-serif" font-size="12" fill="#4A5568" font-style="italic">OAI Telemetry Ingestion</text>
+
+  <g transform="translate(30, 260)">
+    <rect width="840" height="150" fill="url(#orangeGrad)" stroke="#DD6B20" stroke-width="2" rx="8" />
+    <text x="20" y="25" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#C05621">2. O-RAN TELEMETRY &amp; DATA PREPROCESSING PIPELINE</text>
+
+    <rect x="40" y="45" width="220" height="75" fill="#FFFFFF" stroke="#DD6B20" rx="6" />
+    <text x="150" y="75" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#2D3748">Bare-Metal 5G OAI Stack</text>
+    <text x="150" y="95" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#718096">O-RAN KPM xApp Logging</text>
+
+    <path d="M 260 82.5 L 290 82.5" stroke="#DD6B20" stroke-width="2" marker-end="url(#arrow)" />
+
+    <rect x="290" y="45" width="240" height="75" fill="#FFFFFF" stroke="#DD6B20" rx="6" />
+    <text x="410" y="70" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#E53E3E">Raw Metrics Dataset</text>
+    <text x="410" y="90" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#2D3748">20250321_..._KPM Metrics.csv</text>
+    <text x="410" y="105" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#718096">[DRB.UEThpDl / RRU.PrbTotDl]</text>
+
+    <path d="M 530 82.5 L 560 82.5" stroke="#DD6B20" stroke-width="2" marker-end="url(#arrow)" />
+
+    <rect x="560" y="45" width="240" height="75" fill="#FFFFFF" stroke="#DD6B20" rx="6" />
+    <text x="680" y="70" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#3182CE">prepare_data.py Pipeline</text>
+    <text x="680" y="90" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#2D3748">real_ran_iq_trace.bin</text>
+    <text x="680" y="105" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#718096">Interleaved Float32 Tensors</text>
+  </g>
+
+  <path d="M 450 410 L 450 440" stroke="#4A5568" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrow)" />
+  <text x="460" y="430" font-family="Segoe UI, sans-serif" font-size="12" fill="#4A5568" font-style="italic">Continuous State Dataloading</text>
+
+  <g transform="translate(30, 440)">
+    <rect width="840" height="330" fill="url(#purpleGrad)" stroke="#805AD5" stroke-width="2" rx="8" />
+    <text x="20" y="25" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#6B46C1">3. MULTI-AGENT RL ARCHITECTURE (CTDE / MAA2C)</text>
+
+    <rect x="40" y="45" width="760" height="90" fill="#EDF2F7" stroke="#4A5568" stroke-width="1.5" rx="6" />
+    <rect x="50" y="35" width="220" height="20" fill="#4A5568" rx="4" />
+    <text x="160" y="49" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">CENTRALIZED CRITIC MODULE</text>
+    
+    <text x="400" y="85" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold" fill="#2D3748">Global Critic Network (CriticNetwork)</text>
+    <text x="400" y="110" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#4A5568">Evaluates Concatenated Global States ($S_t$) &amp; Outputs Unified Value Advantage Allocations</text>
+
+    <path d="M 150 135 L 150 185" stroke="#805AD5" stroke-width="2" marker-end="url(#arrow-purple)" />
+    <path d="M 420 135 L 420 185" stroke="#805AD5" stroke-width="2" marker-end="url(#arrow-purple)" />
+    <path d="M 690 135 L 690 185" stroke="#805AD5" stroke-width="2" marker-end="url(#arrow-purple)" />
+    <text x="430" y="165" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#6B46C1">Central Policy Gradients Backprop</text>
+
+    <g transform="translate(0, 185)">
+      <rect x="40" y="10" width="760" height="115" fill="#FFFFFF" stroke="#6B46C1" stroke-dasharray="2" rx="6" />
+      <rect x="50" y="0" width="220" height="20" fill="#6B46C1" rx="4" />
+      <text x="160" y="14" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">DECENTRALIZED EXECUTION MODULE</text>
+
+      <rect x="60" y="35" width="180" height="75" fill="#F7FAFC" stroke="#805AD5" stroke-width="1.5" rx="4" />
+      <text x="150" y="55" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#2D3748">Actor Network 0</text>
+      <text x="150" y="75" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#4A5568">Input: Local Obs 0</text>
+      <text x="150" y="95" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#2B6CB0">Action: PRB Map 0</text>
+
+      <rect x="330" y="35" width="180" height="75" fill="#F7FAFC" stroke="#805AD5" stroke-width="1.5" rx="4" />
+      <text x="420" y="55" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#2D3748">Actor Network 1</text>
+      <text x="420" y="75" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#4A5568">Input: Local Obs 1</text>
+      <text x="420" y="95" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#2B6CB0">Action: PRB Map 1</text>
+
+      <rect x="600" y="35" width="180" height="75" fill="#F7FAFC" stroke="#805AD5" stroke-width="1.5" rx="4" />
+      <text x="690" y="55" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#2D3748">Actor Network 2</text>
+      <text x="690" y="75" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#4A5568">Input: Local Obs 2</text>
+      <text x="690" y="95" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#2B6CB0">Action: PRB Map 2</text>
+    </g>
+  </g>
+
+  <path d="M 870 690 L 890 690 L 890 140 L 870 140" fill="none" stroke="#3182CE" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrow-blue)" />
+  <text x="875" y="400" transform="rotate(90 875 400)" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#3182CE">Real-time Policy Optimization Loop</text>
+</svg>
