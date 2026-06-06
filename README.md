@@ -1,3 +1,7 @@
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+![Framework](https://img.shields.io/badge/pytorch-v2.0%2B-orange)
+![RAN Architecture](https://img.shields.io/badge/O--RAN-KPM%20Compliant-purple)
+![License](https://img.shields.io/badge/license-MIT-green)
 # 6G Multi-Agent Reinforcement Learning (MARL) for Intelligent RAN Resource Allocation
 
 An advanced, end-to-end Multi-Agent Reinforcement Learning (MARL) framework designed to optimize resource allocation, maximize spectral efficiency, and mitigate inter-cell interference in next-generation (5G/6G) Radio Access Networks (RAN). 
