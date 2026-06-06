@@ -83,7 +83,7 @@ If you utilize this framework or the OAI KPM data pipeline configuration in your
 
 ```bibtex
 @misc{6gmarlran2026,
-  author = {Your Name},
+  author = {Hussain Ahmad},
   title = {6G Multi-Agent Reinforcement Learning for Intelligent RAN Resource Allocation},
   year = {2026},
   publisher = {GitHub},
