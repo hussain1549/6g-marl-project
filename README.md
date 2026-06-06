@@ -88,5 +88,5 @@ If you utilize this framework or the OAI KPM data pipeline configuration in your
   year = {2026},
   publisher = {GitHub},
   journal = {GitHub Repository},
-  howpublished = {\url{[https://github.com/hussain1549/6g-marl-ran](https://github.com/hussain1549/6g-marl-ran)}}
+  howpublished = {\url{[https://github.com/hussain1549/6g-marl-project](https://github.com/hussain1549/6g-marl-project)}}
 }
